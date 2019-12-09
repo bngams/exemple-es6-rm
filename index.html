@@ -43,20 +43,7 @@
                 <!-- Your content goes here -->
                 <!-- formulaire: 2 champs input text name, price, 1 button type button  -->
                 <!-- Simple Textfield -->
-                <form action="#" id="product-form">
-                    <div class="mdl-textfield mdl-js-textfield">
-                        <input class="mdl-textfield__input" type="text" id="input-name">
-                        <label class="mdl-textfield__label" for="input-name">Name...</label>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield">
-                        <input class="mdl-textfield__input" type="text" id="input-price">
-                        <label class="mdl-textfield__label" for="input-price">Price...</label>
-                    </div>
-                    <!-- Colored raised button -->
-                    <button id="submit-btn" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                        Button
-                    </button>
-                </form>
+                <product-form></product-form>
                 <!-- liste: cartes (cards) -->
                 <div id="product-list">
                     <div class="product-card mdl-card mdl-shadow--2dp">
@@ -79,6 +66,12 @@
     </div>
 
     <script src="node_modules/material-design-lite/material.min.js"></script>
+    <!-- load system js -->
+    <script src="node_modules/systemjs/dist/system.min.js"></script>
+    <script src="node_modules/systemjs/dist/extras/transform.min.js"></script>
+    <script src="node_modules/systemjs-transform-babel/dist/babel-transform.js"></script>
+    <!-- load app.js manually (load main) -->
+    <script>System.import('/app.js');</script>
 </body>
 
 </html>
