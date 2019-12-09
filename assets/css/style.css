@@ -1,0 +1,16 @@
+form {
+    text-align:center;
+}
+
+.page-content {
+    padding: 15px;
+}
+
+.product-card.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.product-card > .mdl-card__title {
+  color: #fff;
+  background:#46B6AC;
+}
